@@ -1,20 +1,23 @@
 """learn logging 3/3"""
+
 import logging
 
 
 def get_logger():
     """advanced usage:
     logger, formatter and handler:
-      1) create formatter - formatter.datefmt
-      2) create handler - handler.setFormatter(formatter)
-      3) create logger - logger.setLevel; logger.addHandler(handler)
+        1) create formatter - formatter.datefmt
+        2) create handler - handler.setFormatter(formatter)
+        3) create logger - logger.setLevel; logger.addHandler(handler)
     """
     # Create logger with the name "my_logger"
     logger = logging.getLogger("my_logger")
     logger.setLevel(logging.INFO)  # Set log level
 
     # Create formatter
-    formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
     formatter.datefmt = "%Y-%m-%d %H:%M:%S"
 
     # Create handler, and set formatter on handler

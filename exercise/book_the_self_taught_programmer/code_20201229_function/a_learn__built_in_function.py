@@ -1,4 +1,3 @@
-
 ####################
 # string functions #
 ####################
@@ -28,9 +27,7 @@ int("Zero")
 # convert something to float
 float(100)
 float("100")
-# exception: 
-
-
+# exception:
 
 
 ################
@@ -42,7 +39,6 @@ if int_age < 40:
     print("You are young!")
 else:
     print("Woe, you are old!")
-
 
 
 #######

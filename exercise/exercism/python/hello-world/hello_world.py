@@ -1,6 +1,6 @@
 #!/usr/local/bin/python
 #!/usr/bin/env python
-#set -x
+# set -x
 ####################################################################################################
 # shell name : ${pytk_home}/exercism/python/hello-world/hello_world.py                             #
 # source     :                                                                                     #
@@ -30,15 +30,15 @@ def pytk_banner():
     banner_message_1 = f"* Python Information: {py_info}"
     banner_message_2 = f"* System Information: {os_info}"
 
-
     v_letter = "*"
     v_repeat = 66
-    banner_message_x = ''.join([ char * v_repeat for char in v_letter])
+    banner_message_x = "".join([char * v_repeat for char in v_letter])
 
     print(banner_message_x)
     print(banner_message_1)
     print(banner_message_2)
     print(banner_message_x)
+
 
 pytk_banner()
 
@@ -49,9 +49,11 @@ pytk_banner()
 # def hello():
 #     return 'Goodbye, Mars!'
 
+
 def hello():
     message = "Hello, World!"
     return message
+
 
 print(hello())
 

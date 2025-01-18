@@ -1,6 +1,3 @@
-
-
-
 print("Hello World!")
 print(200)
 print(3.14)
@@ -24,10 +21,7 @@ for a_shape in shapes:
         a_shape.draw_circle()
 
 # polymorphic application
-shapes = [ trl
-         , sql
-         , crl
-         ]
+shapes = [trl, sql, crl]
 for a_shape in shapes:
     a_shape.draw()
 

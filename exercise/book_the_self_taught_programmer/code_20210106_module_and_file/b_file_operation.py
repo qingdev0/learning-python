@@ -1,7 +1,15 @@
 import os
 
-
-os.path.join("c:","Users","a540619","FILDBA","TOOLKIT","PYTK","exercise","book_the_self_taught_programmer")
+os.path.join(
+    "c:",
+    "Users",
+    "a540619",
+    "FILDBA",
+    "TOOLKIT",
+    "PYTK",
+    "exercise",
+    "book_the_self_taught_programmer",
+)
 
 #########
 # write #
@@ -36,7 +44,7 @@ import csv as _csv
 # write sample
 ################
 # with open("test.csv", "w") as csv_object:
-with open("test.csv", "w", newline='') as csv_object:
+with open("test.csv", "w", newline="") as csv_object:
     csv_data = _csv.writer(csv_object, delimiter=",")
     csv_data.writerow(["one", "two", "three"])
     csv_data.writerow(["four", "five", "six"])
@@ -65,17 +73,16 @@ with open("test.csv", "r") as csv_object:
         print(",".join(csv_list))
 
 # write practice
-watch_list = [ ["Top Gun", "Risky Business", "Minority Report"]
-          , ["Titanic", "The Revenant", "Inception"]
-          , ["Training Day", "Man on Fire", "Flight"]
-          ]
+watch_list = [
+    ["Top Gun", "Risky Business", "Minority Report"],
+    ["Titanic", "The Revenant", "Inception"],
+    ["Training Day", "Man on Fire", "Flight"],
+]
 
 with open("test.csv", "w", newline="") as csv_object:
     csv_data = _csv.writer(csv_object, delimiter=",")
     for each_list in watch_list:
         csv_data.writerow(each_list)
-
-
 
 
 #######

@@ -1,19 +1,13 @@
 {
-  "cSpell.words": [
-    "levelname",
-    "logn",
-    "matplotlib",
-    "nlogn",
-    "pyplot",
-    "xlabel",
-    "ylabel"
-  ],
   "cSpell.customDictionaries": {
-    "custom-dictionary-folder-python": {
-      "name": "custom-dictionary-folder-python",
-      "path": "${workspaceFolder:Python}/.cspell/custom-dictionary-folder-python.txt",
+    "python-learning": {
+      "path": "${workspaceFolder}/.vscode/custom-dictionary.txt",
       "addWords": true,
       "scope": "folder"
     }
-  }
+  },
+  "cSpell.enabled": true,
+  "cSpell.language": "en",
+  "cSpell.allowCompoundWords": true,
+  "cSpell.words": ["myfunc"]
 }
