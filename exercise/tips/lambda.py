@@ -13,8 +13,10 @@ add(5, 3)
 
 # You could declare the same add() function with the def keyword:
 
+
 def add(x, y):
     return x + y
+
 
 add(5, 3)
 8
@@ -26,4 +28,3 @@ add(5, 3)
 
 # 1) Lambda functions are single-expression functions that are not necessarily bound to a name (they can be anonymous).
 # 2) Lambda functions cannot use regular Python statements and always include an implicit `return` statement.
-

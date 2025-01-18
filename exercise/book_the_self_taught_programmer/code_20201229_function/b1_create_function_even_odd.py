@@ -1,6 +1,6 @@
 def even_odd():
     """document
-        code reuse
+    code reuse
     """
     n = input("[read] type a number: ")
     n = int(n)
@@ -10,8 +10,8 @@ def even_odd():
     else:
         print("[info] the number is odd.")
 
-if __name__ == '__main__':
 
+if __name__ == "__main__":
     even_odd()
     even_odd()
     even_odd()

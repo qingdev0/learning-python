@@ -1,6 +1,5 @@
 from b1_create_function_even_odd import even_odd
 
-
 print(even_odd.__name__)
 print(even_odd.__code__)
 print(even_odd.__doc__)

@@ -12,20 +12,33 @@ import random
 
 # from __future__ import print_function
 
-def hangman() :
-    fruit_list = ["apple", "mango", "banana", "orange", "kiwi", "cherry", "pear", "grape", "lemon", "melon"]
-    word = fruit_list[random.randint(0,len(fruit_list)-1)]
+
+def hangman():
+    fruit_list = [
+        "apple",
+        "mango",
+        "banana",
+        "orange",
+        "kiwi",
+        "cherry",
+        "pear",
+        "grape",
+        "lemon",
+        "melon",
+    ]
+    word = fruit_list[random.randint(0, len(fruit_list) - 1)]
 
     wrong = 0
-    stages = [ ""
-             , "___________________"
-             , "|         |        "
-             , "|         |        "
-             , "|         O        "
-             , "|        /|\       "
-             , "|        / \       "
-             , "|                  "
-             ]
+    stages = [
+        "",
+        "___________________",
+        "|         |        ",
+        "|         |        ",
+        "|         O        ",
+        "|        /|\       ",
+        "|        / \       ",
+        "|                  ",
+    ]
     rletters = list(word)
     board = ["_"] * len(word)
     win = False
@@ -38,7 +51,7 @@ def hangman() :
         if char in rletters:
             cind = rletters.index(char)
             board[cind] = char
-            rletters[cind] = '$'
+            rletters[cind] = "$"
         else:
             wrong += 1
 
@@ -53,13 +66,12 @@ def hangman() :
             win = True
             break
 
-    if not win :
+    if not win:
         # print("\n".join(stages[0:wrong]))
         print("[oops] You lose! It was {}...".format(word))
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     hangman()
 
 #######

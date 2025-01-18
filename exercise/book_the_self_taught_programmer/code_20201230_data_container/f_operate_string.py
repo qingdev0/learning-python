@@ -1,6 +1,3 @@
-
-
-
 # string is iterable
 ######################
 author = "Kafka"
@@ -10,7 +7,7 @@ author[2]
 author[3]
 author[4]
 
-author[5]                                        # exception: IndexError: string index out of range
+author[5]  # exception: IndexError: string index out of range
 
 author[-1]
 author[-2]
@@ -30,7 +27,7 @@ ff
 ######################
 "cat" + "in" + "hat"
 
-"cat"+" in "+"hat"
+"cat" + " in " + "hat"
 
 # repeat
 "Swayer" * 3
@@ -38,7 +35,7 @@ ff
 # join method
 first_three = "abc"
 result = "+".join(first_three)
-print(result)                                    # return: a+b+c
+print(result)  # return: a+b+c
 
 words = ["The", "fox", "jumped", "over", "the", "fence", "."]
 one_sentence = "".join(words)
@@ -73,7 +70,7 @@ year_born = "1897"
 # format - code snippet
 #########################
 n_1 = input("[read] enter a noun      : ")
-v   = input("[read] enter a verb      : ")
+v = input("[read] enter a verb      : ")
 adj = input("[read] enter an adjective: ")
 n_2 = input("[read] enter another noun: ")
 
@@ -85,14 +82,18 @@ print(r)
 #########
 # split #
 #########
-"I jumped over the puddle. It was 12 feet!".split(".")    # return: ['I jumped over the puddle', ' It was 12 feet!']
+"I jumped over the puddle. It was 12 feet!".split(
+    "."
+)  # return: ['I jumped over the puddle', ' It was 12 feet!']
 
-"Where now? Who now? When now?".split("? ")      # return: ['Where now', 'Who now', 'When now?']
+"Where now? Who now? When now?".split(
+    "? "
+)  # return: ['Where now', 'Who now', 'When now?']
 
 str_org = "It was bright cold day in April, and the clocks were striking thirteen."
 str_new = str_org.split(",")
 str_new = str_new[0]
-print(str_new)                                   # return: It was bright cold day in April
+print(str_new)  # return: It was bright cold day in April
 
 ##########
 # stripe #
@@ -107,20 +108,20 @@ print(s)
 ###########
 equ = "All animals are equal."
 equ = equ.replace("a", "@")
-print(equ)                                       # return: All @nim@ls @re equ@l.
+print(equ)  # return: All @nim@ls @re equ@l.
 
 #################################
 # search letter by index method #
 #################################
 
-"animal".index("m")                              # return: 3
+"animal".index("m")  # return: 3
 
-"animal".index("z")                              # exception: ValueError: substring not found
+"animal".index("z")  # exception: ValueError: substring not found
 
 try:
     "animal".index("z")
 except:
-    print("[oops] data not found.")              # return: [oops] data not found.
+    print("[oops] data not found.")  # return: [oops] data not found.
 
 
 ##############
@@ -138,11 +139,11 @@ except:
 # print("She said "Surely".")                    # exception: SyntaxError: invalid syntax
 
 # backslash
-print("She said \"Surely\".")                    # return: She said "Surely".
+print('She said "Surely".')  # return: She said "Surely".
 
 # works without backslash
-print('She said "Surely".')                      # return: She said "Surely".
-print("She said 'Surely'.")                      # return: She said 'Surely'.
+print('She said "Surely".')  # return: She said "Surely".
+print("She said 'Surely'.")  # return: She said 'Surely'.
 
 ##############
 # line break #
@@ -150,26 +151,22 @@ print("She said 'Surely'.")                      # return: She said 'Surely'.
 print("line 1\nline 2\nline 3\nline 4")
 
 
-
 ###########
 # slicing #
 ###########
 fict = ["Tolstoy", "Camus", "Orwell", "Huxley", "Austin"]
-fict[0:3]                                        # return: ['Tolstoy', 'Camus', 'Orwell']
+fict[0:3]  # return: ['Tolstoy', 'Camus', 'Orwell']
 
 
 ivan = """In place of death there was light."""
 
-ivan[0 :17]                                      # 'In place of death'
-ivan[  :17]                                      # 'In place of death'
+ivan[0:17]  # 'In place of death'
+ivan[:17]  # 'In place of death'
 
-ivan[18:33]                                      # 'there was light'
-ivan[18:  ]                                      # 'there was light'
+ivan[18:33]  # 'there was light'
+ivan[18:]  # 'there was light'
 
-ivan[  :  ]                                      # 'In place of death there was light.'
-
-
-
+ivan[:]  # 'In place of death there was light.'
 
 
 #######

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 # # Writing Python 3 in Python 2.6+
-from __future__ import print_function, unicode_literals
-from __future__ import absolute_import, division
+from __future__ import absolute_import, division, print_function, unicode_literals
+
 # These switch to Python 3 meanings for key constructs.
 # Now you use print() instead of print statement, unicode strings, imports will always be absolute,
 #  and division will create floating-point values as needed (i.e., 1/2 now returns 0.5).
@@ -26,9 +26,9 @@ for i in range(4):
 # code 01
 home = "America"
 
-if home == "America" :
+if home == "America":
     print("Hello, America!")
-else :
+else:
     print("Hello, World!")
 
 # >> Hello, America!
@@ -37,11 +37,11 @@ else :
 # code 02
 x = 2
 
-if x == 2 :
+if x == 2:
     print("The number is 2.")
-if x % 2 == 0 :
+if x % 2 == 0:
     print("The number is even.")
-if x % 2 != 0 :
+if x % 2 != 0:
     print("The number is odd.")
 
 # >> The number is 2.
@@ -51,34 +51,21 @@ if x % 2 != 0 :
 x = 10
 y = 11
 
-if x == 10 :
-    if y == 11 :
+if x == 10:
+    if y == 11:
         print(x + y)
 
 # code 04
 home = "Thailand"
 home = "Mars"
 
-if home == "Japan" :
+if home == "Japan":
     print("Hello, Japan!")
-elif home == "Thailand" :
+elif home == "Thailand":
     print("Hello, Thailand!")
-elif home == "India" :
+elif home == "India":
     print("Hello, India!")
-elif home == "China" :
+elif home == "China":
     print("Hello, China!")
-else :
+else:
     print("Hello, World!")
-
-
-
-
-
-
-
-
-
-
-
-
-

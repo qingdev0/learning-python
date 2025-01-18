@@ -1,5 +1,3 @@
-
-
 # Python dictionary is a container of key-value pairs.
 
 # create empty dictionary
@@ -9,7 +7,7 @@ my_dict
 my_dict = {}
 my_dict
 
-fruit_dict = {"Apple":"Red", "Banana":"Yellow"}
+fruit_dict = {"Apple": "Red", "Banana": "Yellow"}
 fruit_dict
 
 
@@ -52,12 +50,7 @@ del books["The Trial"]
 # code snippet #
 ################
 # 1
-rhymes = { "1": "fun"
-         , "2": "blue"
-         , "3": "me"
-         , "4": "floor"
-         , "5": "live"
-         }
+rhymes = {"1": "fun", "2": "blue", "3": "me", "4": "floor", "5": "live"}
 
 n = input("[read] type a number [1-5]: ")
 if n in rhymes:
@@ -67,12 +60,7 @@ else:
     print("[oops] data not found..")
 
 # 2
-rhymes = { 1: "fun"
-         , 2: "blue"
-         , 3: "me"
-         , 4: "floor"
-         , 5: "live"
-         }
+rhymes = {1: "fun", 2: "blue", 3: "me", 4: "floor", 5: "live"}
 
 n = int(input("[read] type a number [1-5]: "))
 if n in rhymes:
@@ -80,7 +68,6 @@ if n in rhymes:
     print(rhyme)
 else:
     print("[oops] data not found..")
-
 
 
 #######

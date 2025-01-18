@@ -57,8 +57,6 @@ color_list = ["blue", "green", "yellow"]
 "black" not in color_list
 
 
-
-
 ################
 # code snippet #
 ################
@@ -68,6 +66,3 @@ if guess in colors:
     print("[info] you guessed correctly!")
 else:
     print("[oops] wrong! try again please.")
-
-
-

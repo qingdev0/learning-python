@@ -21,7 +21,6 @@ print(rap)
 print(artist_list)
 
 
-
 # nested list 2/3: list element can be tuple
 
 location_list = list()
@@ -35,7 +34,6 @@ location_list.append(chicago)
 print(location_list)
 
 
-
 # nested tuple 1/2: tuple element can be list
 
 eights = ["Edgar Allan Poe", "Charles Dickens"]
@@ -43,7 +41,6 @@ nines = ["Hemingway", "Fitzgerald", "Orwell"]
 
 tuple_authors = (eights, nines)
 print(tuple_authors)
-
 
 
 dict_birthday = {"Hemingway": "7.21.1899", "Fitzgerald": "9.24.1896"}
@@ -57,10 +54,11 @@ print(my_tuple)
 
 # netsted dictionary 1/1: dictionary element can be list, tuple, and dictionary
 
-ny = {"locations": (40.7128, 74.0059)
-     ,"celebs"   : ["W. Allen", "Jay Z", "K. Bacon"]
-     ,"facts"    : {"state": "NY", "country": "America"}
-     }
+ny = {
+    "locations": (40.7128, 74.0059),
+    "celebs": ["W. Allen", "Jay Z", "K. Bacon"],
+    "facts": {"state": "NY", "country": "America"},
+}
 
 print(ny)
 

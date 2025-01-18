@@ -1,11 +1,8 @@
-
-
-
 #
 
 x = 10
 while x > 0:
-    print('{}'.format(x))
+    print("{}".format(x))
     x -= 1
 print("Happy New Year!")
 
@@ -14,26 +11,27 @@ print("Happy New Year!")
 #########################
 # stop a while loop after n amount of time
 import time
-timeout = time.time() + 5   # 5 seconds from now
+
+timeout = time.time() + 5  # 5 seconds from now
 counter = 0
 while True:
-   #counter += 1
+    # counter += 1
     time.sleep(1)
 
-    print("#{} do something at {}".format(counter,time.ctime()))
+    print("#{} do something at {}".format(counter, time.ctime()))
 
     if counter == 5 or time.time() > timeout:
         break
 
 
-
 ##########################
 # user interactive break #
 ##########################
-questions = [ "[read] what is your name? "
-            , "[read] what is your favourite color? "
-            , "[read] what is your quest ?"
-            ]
+questions = [
+    "[read] what is your name? ",
+    "[read] what is your favourite color? ",
+    "[read] what is your quest ?",
+]
 
 n = 0
 
@@ -88,11 +86,9 @@ print(added)
 
 
 # case sample 3
-while input('[read] y or n? ') != 'n':
+while input("[read] y or n? ") != "n":
     for i in range(1, 6):
         print(i)
-
-
 
 
 #######

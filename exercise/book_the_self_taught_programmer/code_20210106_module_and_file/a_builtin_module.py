@@ -1,8 +1,7 @@
+import keyword
 import math
 import random
 import statistics
-import keyword
-
 
 # math
 math.pow(2, 5)

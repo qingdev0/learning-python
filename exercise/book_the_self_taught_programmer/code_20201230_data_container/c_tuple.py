@@ -15,7 +15,7 @@ my_tuple
 my_tuple = ("self_taught",)
 my_tuple
 # not tuple
-my_tuple = ("self_taught")
+my_tuple = "self_taught"
 my_tuple
 
 # tuple is immutable
@@ -28,4 +28,3 @@ my_tuple[1] = "Handmaid's Tale"
 
 "New" in my_tuple
 "1984" not in my_tuple
-

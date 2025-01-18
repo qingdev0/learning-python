@@ -1,6 +1,3 @@
-
-
-
 #################
 # string method #
 #################
@@ -9,7 +6,7 @@
 "Hello World".lower()
 "Hello World".capitalize()
 
-"Hello World".replace("o","0")
+"Hello World".replace("o", "0")
 
 # format
 
@@ -38,16 +35,3 @@ fruit_list
 fruit_list.pop()
 fruit_list.pop()
 fruit_list
-
-
-
-
-
-
-
-
-
-
-
-
-

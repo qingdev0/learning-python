@@ -16,10 +16,7 @@ for object in coms:
     print(object)
 
 # iterating over a dictionary
-people = { "G. Bluth II": "A. Development"
-         , "Barney"     : "HIMYM"
-         , "Dennis"     : "Always Sunny"
-         }
+people = {"G. Bluth II": "A. Development", "Barney": "HIMYM", "Dennis": "Always Sunny"}
 
 for object in people:
     print(object)
@@ -34,11 +31,11 @@ i = 0
 for object in tv:
     tv[i] = object.upper()
     i += 1
-print(tv)                                        # return: ['GOT', 'NARCOS', 'VICE']
+print(tv)  # return: ['GOT', 'NARCOS', 'VICE']
 
 # revision 2
 tv = ["GOT", "Narcos", "Vice"]
-print(enumerate(tv))                             # return: <enumerate object at 0x0000021DC4C96798>
+print(enumerate(tv))  # return: <enumerate object at 0x0000021DC4C96798>
 for i, object in enumerate(tv):
     new = tv[i]
     new = new.upper()
@@ -47,7 +44,9 @@ print(tv)
 
 # revision 3
 tv = ["GOT", "Narcos", "Vice"]
-for i, object in enumerate(tv):                  # learn: enumerate() in for-loop <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+for i, object in enumerate(
+    tv
+):  # learn: enumerate() in for-loop <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     tv[i] = object.upper()
 print(tv)
 
@@ -71,18 +70,13 @@ for show in coms:
 print(all_shows)
 
 
-
-
-
 #########
 # range #
 #########
 
-for i in range(1,5):
-    n = i ** i
+for i in range(1, 5):
+    n = i**i
     print(n)
-
-
 
 
 #######
