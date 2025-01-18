@@ -1,7 +1,11 @@
+"""learn logging 1/3"""
 import logging
 
 
 def main() -> None:
+    """most basic usage:
+    control on logging level only"""
+
     logging.basicConfig(level=logging.INFO)
 
     logging.debug("This is a debug message.")
