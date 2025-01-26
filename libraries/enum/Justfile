@@ -1,0 +1,7 @@
+TOPIC := "Available Recipes for enum Library:\n"
+
+_default:
+    @just --list --unsorted --list-prefix "✨ " --list-heading '{{TOPIC}}'
+
+auto:
+    python auto.py
