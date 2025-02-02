@@ -1,0 +1,39 @@
+databases:
+  DevDB:
+    host: "127.0.0.1"
+    port: 1521
+    service_name: "ORCL"
+    user: "scott"
+    password: "tiger"
+    use_ssl: false
+
+  ATP:
+    host: "adb.ap-seoul-1.oraclecloud.com"
+    port: 1522
+    service_name: "oracledb_tp"
+    user: "ADMIN"
+    password: "Passw0rd2025"
+    is_cloud: true
+    wallet_location: "/Users/ewanli/Downloads/Wallet_oracledb"
+    wallet_password: "Passw0rd"
+
+  CloudDB:
+    host: "your-db.adb.region.oraclecloudapps.com"
+    port: 1522
+    service_name: "service_high"
+    user: "admin"
+    password: "your_password"
+    wallet_location: "/path/to/wallet"
+    is_cloud: true
+    # Optional: if config_dir is different from wallet_location
+    config_dir: "/path/to/config"
+    # Optional: if wallet is password protected
+    wallet_password: "wallet_password"
+
+  OnPremDB:
+    host: "127.0.0.1"
+    port: 1521
+    service_name: "ORCL"
+    user: "scott"
+    password: "tiger"
+    is_cloud: false
